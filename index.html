@@ -23,7 +23,26 @@
             <script src="js/respond.js" type="text/javascript"></script>
             <link rel='stylesheet' href='css/ie.css' type='text/css' media='all' />
         <![endif]-->
-
+		<style>
+			article {
+				display: none;
+				margin-left:26px;
+				}
+		</style>
+		<script>
+			$(document).ready(function() {
+				var curPage="";
+				
+				$("#menu-brand-menu a").click(function() {
+					if (curPage.length) { 
+						$("#"+curPage).hide();
+					}
+					curPage=$(this).data("page");
+					$("#"+curPage).show();
+				});
+			});
+		</script>
+		
     </head>
     <body>
 
@@ -94,23 +113,17 @@
             <div class="dawgdrops-inner container">
                 <ul class="dawgdrops-nav" id="menu-brand-menu">
                     <li class="dawgdrops-item">
-                        <a class="dropdown-toggle" href=
-                        "#HtmlOverview"
-                        id="189" title="HTML5 Overview">HTML5 Overview</a>
+                        <a class="dropdown-toggle" href="#HtmlOverview" title="HTML5 Overview">HTML5 Overview</a>
 
                         <ul class="dawgdrops-menu" id="menu-189">
                             <li>
-                                <a href=
-                                "#History"
-                                id="492" tabindex="-1" title=
-                                "History">History</a>
+                                <a href="#History" tabindex="-1" title="History" data-page="html-history">
+								History</a>
                             </li>
 
                             <li>
-                                <a href=
-                                "#Html51"
-                                id="488" tabindex="-1" title=
-                                "HTML 5.1">HTML 5.1</a>
+                                <a href="#Html51" tabindex="-1" title="HTML 5.1" data-page="html-html51">
+								HTML 5.1</a>
                             </li>
                         </ul>
                     </li>
@@ -118,41 +131,149 @@
                     <li class="dawgdrops-item">
                         <a class="dropdown-toggle" href=
                         "#Layout"
-                        id="202" title="Visual">Layout</a>
+                        id="202" title="Visual">Tags</a>
 
                         <ul class="dawgdrops-menu" id="menu-202">
                             <li>
-                                <a href="#"
-                                id="490" tabindex="-1" title=
-                                "#">#</a>
+                                <a href="#Article" tabindex="-1" title="Article" data-page="html-article">
+								Article</a>
                             </li>
-
                             <li>
-                                <a href=
-                                "#"
-                                id="491" tabindex="-1" title="#">#</a>
+                                <a href="#Aside" tabindex="-1" title="Aside" data-page="html-aside">
+								Aside
+								</a>
                             </li>
-
                             <li>
-                                <a href=
-                                "#"
-                                id="489" tabindex="-1" title="#">#</a>
+                                <a href="#Audio" tabindex="-1" title="Audio" data-page="html-audio">
+									Audio
+								</a>
                             </li>
-
+							<li>
+                                <a href="#bdi" tabindex="-1" title="BDI" data-page="html-bdi">
+									BDI
+								</a>
+                            </li>
+							<li>
+                                <a href="#Canvas" tabindex="-1" title="Canvas" data-page="html-canvas">
+									Canvas
+								</a>
+                            </li>
+							<li>
+                                <a href="#Data" tabindex="-1" title="Data" data-page="html-data">
+									Data
+								</a>
+                            </li>
+							<li>
+                                <a href="#DataList" tabindex="-1" title="DataList" data-page="html-datalist">
+								DataList
+								</a>
+                            </li>
+							<li>
+                                <a href="#Embed" tabindex="-1" title="Embed" data-page="html-embed">
+								Embed
+								</a>
+                            </li>
+							<li>
+                                <a href="#FigCaption" tabindex="-1" title="FigCaption" data-page="html-figcaption">
+								FigCaption
+								</a>
+                            </li>
+							<li>
+                                <a href="#Figure" tabindex="-1" title="Figure" data-page="html-figure">
+								Figure
+								</a>
+                            </li>
+							<li>
+                                <a href="#Footer" tabindex="-1" title="Footer" data-page="html-footer">
+								Footer
+								</a>
+                            </li>
+							<li>
+                                <a href="#Header" tabindex="-1" title="Header" data-page="html-header">
+								Header
+								</a>
+                            </li>
+							<li>
+                                <a href="#Keygen" tabindex="-1" title="Keygen" data-page="html-keygen">
+								Keygen
+								</a>
+                            </li>
+							<li>
+                                <a href="#Main" tabindex="-1" title="Main" data-page="html-main">
+								Main
+								</a>
+                            </li>
+							<li>
+                                <a href="#Mark" tabindex="-1" title="Mark" data-page="html-mark">
+								Mark
+								</a>
+                            </li>
+							<li>
+                                <a href="#Meter" tabindex="-1" title="Meter" data-page="html-meter">
+								Meter</a>
+                            </li>
+							<li>
+                                <a href="#Nav" tabindex="-1" title="Nav" data-page="html-nav">
+								Nav</a>
+                            </li>
+							<li>
+                                <a href="#Output" tabindex="-1" title="Output" data-page="html-output">
+								Output</a>
+                            </li>
+							<li>
+                                <a href="#Progress" tabindex="-1" title="Progress" data-page="html-progress">
+								Progress</a>
+                            </li>
+							<li>
+                                <a href="#rb" tabindex="-1" title="RB" data-page="html-ruby">
+								RB</a>
+                            </li>
+							<li>
+                                <a href="#rp" tabindex="-1" title="rp" data-page="html-ruby">
+								RP</a>
+                            </li>
+							<li>
+                                <a href="#rt" tabindex="-1" title="rt" data-page="html-ruby">
+								RT</a>
+                            </li>
+							<li>
+                                <a href="#rtc" tabindex="-1" title="rtc" data-page="html-ruby">
+								RTC</a>
+                            </li>
                             <li>
-                                <a href=
-                                "#"
-                                id="487" tabindex="-1" title=
-                                "#">#</a>
+                                <a href="#Ruby" tabindex="-1" title="Ruby" data-page="html-ruby">
+								Ruby</a>
                             </li>
-                        </ul>
-                    </li>
-
-                    <li class="dawgdrops-item">
-                        <a href=
-                        "#Media"
-                        id="193" title="Media">Media</a>
-                    </li>
+							<li>
+                                <a href="#Section" tabindex="-1" title="Section" data-page="html-section">
+								Section</a>
+                            </li>
+							<li>
+                                <a href="#Source" tabindex="-1" title="Source" data-page="html-source">
+								Source</a>
+                            </li>
+							<li>
+                                <a href="#Template" tabindex="-1" title="Template" data-page="html-template">
+								Template</a>
+                            </li>
+							<li>
+                                <a href="#Time" tabindex="-1" title="Time" data-page="html-time">
+								Time</a>
+                            </li>
+							<li>
+                                <a href="#Track" tabindex="-1" title="Track" data-page="html-track">
+								Track</a>
+                            </li>
+							<li>
+                                <a href="#Video" tabindex="-1" title="Video" data-page="html-video">
+								Video</a>
+                            </li>
+							<li>
+                                <a href="#wbr" tabindex="-1" title="WBR" data-page="html-wbr">
+								WBR</a>
+                            </li>
+						</ul>
+					</li>
 
                     <li class="dawgdrops-item">
                         <a href="http://www.washington.edu/brand/section/help/"
@@ -163,17 +284,134 @@
         </nav>
 
 <main>
+<article id="html-history"><h1>History</h1></article>
+<article id="html-html51"><h1>HTML 5.1</h1></article>
 
-<article id="ruby">
+<article id="html-article"><h1>Article</h1>
+<pre>
+<article itemscope itemtype="http://schema.org/BlogPosting">
+ <header>
+  <h1 itemprop="headline">The Very First Rule of Life</h1>
+  <p><time itemprop="datePublished" datetime="2009-10-09">3 days ago</time></p>
+  <link itemprop="url" href="?comments=0">
+ </header>
+ <p>If there's a microphone anywhere near you, assume it's hot and
+ sending whatever you're saying to the world. Seriously.</p>
+ <p>...</p>
+ <footer>
+  <a itemprop="discussionUrl" href="?comments=1">Show comments...</a>
+ </footer>
+</article>
+</pre>
+https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-article-element
+</article>
 
+<article id="html-aside"><h1>Aside </h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-aside-element
+</article>
+
+<article id="html-audio"><h1>Audio</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-audio-element
+</article>
+
+<article id="html-bdi"><h1>BDI</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/text-level-semantics.html#the-bdi-element
+</article>
+
+<article id="html-canvas"><h1>Canvas</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/scripting-1.html#the-canvas-element
+</article>
+
+<article id="html-data"><h1>Data</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/text-level-semantics.html#the-data-element
+</article>
+
+<article id="html-datalist"><h1>DataList</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#the-datalist-element
+</article>
+
+<article id="html-embed"><h1>Embed</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-embed-element
+</article>
+
+<article id="html-figcaption"><h1>FigCaption</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/grouping-content.html#the-figcaption-element
+</article>
+
+<article id="html-figure"><h1>Figure</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/grouping-content.html#the-figure-element
+</article>
+
+<article id="html-footer"><h1>Footer</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-footer-element
+</article>
+
+<article id="html-header"><h1>Header</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-header-element
+</article>
+
+<article id="html-keygen"><h1>Keygen</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#the-keygen-element
+</article>
+
+<article id="html-main"><h1>Main</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/grouping-content.html#the-main-element
+</article>
+
+<article id="html-mark"><h1>Mark</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/text-level-semantics.html#the-mark-element
+</article>
+
+<article id="html-meter"><h1>Meter</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#the-meter-element
+</article>
+
+<article id="html-nav"><h1>Nav</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-nav-element
+</article>
+
+<article id="html-output"><h1>Output</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#the-output-element
+</article>
+
+<article id="html-progress"><h1>Progress</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/rendering.html#the-progress-element-0
+</article>
+
+<article id="html-section"><h1>Section</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-section-element
+</article>
+
+<article id="html-source"><h1>Source</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-source-element
+</article>
+
+<article id="html-template"><h1>Template</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/scripting-1.html#the-template-element
+</article>
+
+<article id="html-time"><h1>Time</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/text-level-semantics.html#the-time-element
+</article>
+
+<article id="html-track"><h1>Track</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-track-element
+</article>
+
+<article id="html-video"><h1>Video</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-video-element
+</article>
+
+<article id="html-wbr"><h1>WBR</h1>
+https://www.w3.org/TR/2014/REC-html5-20141028/text-level-semantics.html#the-wbr-element
+</article>
+
+<article id="html-ruby">
 <h1>Ruby</h1>
-
 <h2>Not the rails kind.</h2>
-
 <p>
 The tag is used for specifying Ruby annotations, which is commonly used in East Asian typography. 
 </p>
-
 <p>
 Ruby (also spelt rubi) characters are small, annotative glosses that can be placed above or to the right of a character when writing logographic languages such as Chinese or Japanese to show the pronunciation. Ruby annotations, are usually used as a pronunciation guide for relatively obscure characters.
 </p>
@@ -183,16 +421,8 @@ Ruby (also spelt rubi) characters are small, annotative glosses that can be plac
 		<code>&lt;ruby&gt;</code>
 		Specifies a ruby annotation (used in East Asian typography)
 		<p>
-<ruby>
-   <rb>旧</rb>
-   <rb>金</rb>
-   <rb>山</rb>
-   
-   <rt>jiù</rt>
-   <rt>jīn</rt>
-   <rt>shān</rt>
-</ruby>
-</p>
+			<ruby>旧<rb>金<rb>山<rt>jiù<rt>jīn<rt>shān</ruby>
+		</p>
 
 	</li>
 	<li>
@@ -213,16 +443,7 @@ Ruby (also spelt rubi) characters are small, annotative glosses that can be plac
 	</li>
 </ul>
 
-
-<p>
-<ruby>
-   <rb>旧</rb><rt>jiù</rt>
-   <rb>金</rb><rt>jīn</rt>
-   <rb>山</rb><rt>shān</rt>-
-   <rtc>San Francisco</rtc>
-</ruby>
-</p>
-
+https://www.w3.org/TR/html5/text-level-semantics.html#the-ruby-element
 </article>
 
 
