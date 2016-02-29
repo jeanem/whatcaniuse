@@ -224,26 +224,28 @@
                                 <a href="#Progress" tabindex="-1" title="Progress" data-page="html-progress">
 								Progress</a>
                             </li>
-							<li>
-                                <a href="#rb" tabindex="-1" title="RB" data-page="html-ruby">
-								RB</a>
-                            </li>
-							<li>
-                                <a href="#rp" tabindex="-1" title="rp" data-page="html-ruby">
-								RP</a>
-                            </li>
-							<li>
-                                <a href="#rt" tabindex="-1" title="rt" data-page="html-ruby">
-								RT</a>
-                            </li>
-							<li>
-                                <a href="#rtc" tabindex="-1" title="rtc" data-page="html-ruby">
-								RTC</a>
-                            </li>
                             <li>
                                 <a href="#Ruby" tabindex="-1" title="Ruby" data-page="html-ruby">
 								Ruby</a>
-                            </li>
+                            <ul>
+								<li>
+									<a href="#rb" tabindex="-1" title="RB" data-page="html-ruby">
+									RB</a>
+								</li>
+								<li>
+									<a href="#rp" tabindex="-1" title="rp" data-page="html-ruby">
+									RP</a>
+								</li>
+								<li>
+									<a href="#rt" tabindex="-1" title="rt" data-page="html-ruby">
+									RT</a>
+								</li>
+								<li>
+									<a href="#rtc" tabindex="-1" title="rtc" data-page="html-ruby">
+									RTC</a>
+								</li>
+							</ul>
+							</li>
 							<li>
                                 <a href="#Section" tabindex="-1" title="Section" data-page="html-section">
 								Section</a>
@@ -378,6 +380,45 @@ https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#the-output-element
 https://www.w3.org/TR/2014/REC-html5-20141028/rendering.html#the-progress-element-0
 </article>
 
+<article id="html-ruby"><h1>Ruby</h1>
+<h2>Not the rails kind.</h2>
+<p>
+The tag is used for specifying Ruby annotations, which is commonly used in East Asian typography. 
+</p>
+<p>
+Ruby (also spelt rubi) characters are small, annotative glosses that can be placed above or to the right of a character when writing logographic languages such as Chinese or Japanese to show the pronunciation. Ruby annotations, are usually used as a pronunciation guide for relatively obscure characters.
+</p>
+
+<ul>
+	<li>
+		<code>&lt;ruby&gt;</code>
+		Specifies a ruby annotation (used in East Asian typography)
+		<p>
+			<ruby><rb>旧</rb><rb>金</rb><rb>山</rb><rt>jiù</rt><rt>jīn</rt><rt>shān</rt></ruby>
+		</p>
+
+	</li>
+	<li>
+		<code>&lt;rb&gt;</code>
+		Marks the base text component of a ruby annotation.
+	 </li>
+	<li>
+		<code>&lt;rt&gt;</code>
+		Specifies the ruby text component of a ruby annotation.
+	 </li>
+	<li>
+		<code>&lt;rtc&gt;</code>
+		Marks a ruby text container for ruby text components in a ruby annotation.
+	 </li>
+	<li>
+		<code>&lt;rp&gt;</code>
+		Used for the benefit of browsers that don't support ruby annotations
+	</li>
+</ul>
+
+https://www.w3.org/TR/html5/text-level-semantics.html#the-ruby-element
+</article>
+
 <article id="html-section"><h1>Section</h1>
 https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-section-element
 </article>
@@ -406,51 +447,9 @@ https://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-video-
 https://www.w3.org/TR/2014/REC-html5-20141028/text-level-semantics.html#the-wbr-element
 </article>
 
-<article id="html-ruby">
-<h1>Ruby</h1>
-<h2>Not the rails kind.</h2>
-<p>
-The tag is used for specifying Ruby annotations, which is commonly used in East Asian typography. 
-</p>
-<p>
-Ruby (also spelt rubi) characters are small, annotative glosses that can be placed above or to the right of a character when writing logographic languages such as Chinese or Japanese to show the pronunciation. Ruby annotations, are usually used as a pronunciation guide for relatively obscure characters.
-</p>
-
-<ul>
-	<li>
-		<code>&lt;ruby&gt;</code>
-		Specifies a ruby annotation (used in East Asian typography)
-		<p>
-			<ruby>旧<rb>金<rb>山<rt>jiù<rt>jīn<rt>shān</ruby>
-		</p>
-
-	</li>
-	<li>
-		<code>&lt;rb&gt;</code>
-		Marks the base text component of a ruby annotation.
-	 </li>
-	<li>
-		<code>&lt;rt&gt;</code>
-		Specifies the ruby text component of a ruby annotation.
-	 </li>
-	<li>
-		<code>&lt;rtc&gt;</code>
-		Marks a ruby text container for ruby text components in a ruby annotation.
-	 </li>
-	<li>
-		<code>&lt;rp&gt;</code>
-		Used for the benefit of browsers that don't support ruby annotations
-	</li>
-</ul>
-
-https://www.w3.org/TR/html5/text-level-semantics.html#the-ruby-element
-</article>
-
 
 </main>
-
-		
-    </div>
 </div>
-    </body>
+</div>
+</body>
 </html>
