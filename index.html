@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="http://uw.edu/assets/uw.css"/>
+        <link rel="stylesheet" href="css/full.css">
+
+		<script src="http://uw.edu/assets/uw.js"></script>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=1.9.1'></script>
+		<script src='http://www.washington.edu/wp-includes/js/underscore.min.js?ver=1.6.0'></script>
+		<script src='http://www.washington.edu/wp-includes/js/backbone.min.js?ver=1.1.2'></script>
+		<script src='http://www.washington.edu/wp-content/themes/uw-2014/js/site.dev.js'></script>
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js" type="text/javascript"></script>
+            <script src="js/respond.js" type="text/javascript"></script>
+            <link rel='stylesheet' href='css/ie.css' type='text/css' media='all' />
+        <![endif]-->
+		<style>
+			article {
+				display: none;
+				margin-left:26px;
+				}
+		</style>
+		<script>
+			$(document).ready(function() {
+				var curPage="";
+				
+				$("#menu-brand-menu a").click(function() {
+					if (curPage.length) { 
+						$("#"+curPage).hide();
+					}
+					curPage=$(this).data("page");
+					$("#"+curPage).show();
+				});
+			});
+		</script>
+		
+    </head>
+	<script src="//www.washington.edu/static/alert.js" type="text/javascript"></script>
+    <body>
+
+
+
+<div id='uwsearcharea' aria-hidden="true" class="uw-search-bar-container"></div>
+<div id="uw-container">
+
+    <div id="uw-container-inner">
+        <header class="uw-thinstrip">
+
+            <div class='align-right'>
+            <nav class="uw-thin-strip-nav">
+                <ul class="uw-thin-links">
+                    <li>
+                        <a href="http://uw.edu/studentlife" title=
+                        "Students">Students</a>
+                    </li>
+
+                    <li>
+                        <a href="http://uw.edu/parents" title=
+                        "Parents">Parents</a>
+                    </li>
+
+                    <li>
+                        <a href="http://uw.edu/facultystaff" title=
+                        "Faculty &amp; Staff">Faculty &amp; Staff</a>
+                    </li>
+
+                    <li>
+                        <a href="http://uw.edu/alumni" title=
+                        "Alumni">Alumni</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav aria-label="search and quick links" id="search-quicklinks" role="navigation">
+
+
+                <button class='uw-search' aria-haspopup="true" aria-owns="uwsearcharea" aria-controls="uwsearcharea" aria-expanded="false">Open search area
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.776px" height="51.062px" viewBox="0 0 18.776 51.062" enable-background="new 0 0 18.776 51.062" xml:space="preserve">
+        <g><path fill="#FFFFFF" d="M3.537,7.591C3.537,3.405,6.94,0,11.128,0c4.188,0,7.595,3.406,7.595,7.591
+            c0,4.187-3.406,7.593-7.595,7.593C6.94,15.185,3.537,11.778,3.537,7.591z M5.245,7.591c0,3.246,2.643,5.885,5.884,5.885
+            c3.244,0,5.89-2.64,5.89-5.885c0-3.245-2.646-5.882-5.89-5.882C7.883,1.71,5.245,4.348,5.245,7.591z"></path>
+
+            <rect x="2.418" y="11.445" transform="matrix(0.7066 0.7076 -0.7076 0.7066 11.7842 2.0922)" fill="#FFFFFF" width="1.902" height="7.622"></rect>
+        </g>
+        <path fill="#FFFFFF" d="M3.501,47.864c0.19,0.194,0.443,0.29,0.694,0.29c0.251,0,0.502-0.096,0.695-0.29l5.691-5.691l5.692,5.691
+          c0.192,0.194,0.443,0.29,0.695,0.29c0.25,0,0.503-0.096,0.694-0.29c0.385-0.382,0.385-1.003,0-1.388l-5.692-5.691l5.692-5.692
+          c0.385-0.385,0.385-1.005,0-1.388c-0.383-0.385-1.004-0.385-1.389,0l-5.692,5.691L4.89,33.705c-0.385-0.385-1.006-0.385-1.389,0
+          c-0.385,0.383-0.385,1.003,0,1.388l5.692,5.692l-5.692,5.691C3.116,46.861,3.116,47.482,3.501,47.864z"></path>
+        </svg>
+
+                </button>
+
+                <button class='uw-quicklinks' aria-haspopup="true" aria-expanded="false">Quick Links<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15.63px" height="69.13px" viewBox="0 0 15.63 69.13" enable-background="new 0 0 15.63 69.13" xml:space="preserve"><polygon fill="#FFFFFF" points="12.8,7.776 12.803,7.773 5.424,0 3.766,1.573 9.65,7.776 3.766,13.98 5.424,15.553 12.803,7.78"></polygon><polygon fill="#FFFFFF" points="9.037,61.351 9.036,61.351 14.918,55.15 13.26,53.577 7.459,59.689 1.658,53.577 0,55.15 5.882,61.351 5.882,61.351 5.884,61.353 0,67.557 1.658,69.13 7.459,63.019 13.26,69.13 14.918,67.557 9.034,61.353"></polygon></svg></button>
+            </nav>
+            </div>
+
+            <div class="container">
+                <a class="uw-patch" href="http://uw.edu" tabindex="-1" title=
+                "University of Washington Home">Home</a> <a class="uw-wordmark"
+                href="http://uw.edu" title=
+                "University of Washington Home">Home</a>
+            </div>
+        </header>
+
+        <nav id="dawgdrops">
+            <div class="dawgdrops-inner container">
+                <ul class="dawgdrops-nav" id="menu-brand-menu">
+                    <li class="dawgdrops-item">
+                        <a class="dropdown-toggle" href="#HtmlOverview" title="HTML5 Overview">HTML5 Overview</a>
+
+                        <ul class="dawgdrops-menu" id="menu-189">
+                            <li>
+                                <a href="#History" tabindex="-1" title="History" data-page="html-history">
+								History</a>
+                            </li>
+
+                            <li>
+                                <a href="#Html51" tabindex="-1" title="HTML 5.1" data-page="html-html51">
+								HTML 5.1</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dawgdrops-item">
+                        <a class="dropdown-toggle" href=
+                        "#Layout"
+                        id="202" title="Visual">Tags</a>
+
+                        <ul class="dawgdrops-menu" id="menu-202">
+                            <li>
+                                <a href="#Article" tabindex="-1" title="Article" data-page="html-article">
+								Article</a>
+                            </li>
+                            <li>
+                                <a href="#Aside" tabindex="-1" title="Aside" data-page="html-aside">
+								Aside
+								</a>
+                            </li>
+                            <li>
+                                <a href="#Audio" tabindex="-1" title="Audio" data-page="html-audio">
+									Audio
+								</a>
+                            </li>
+							<li>
+                                <a href="#bdi" tabindex="-1" title="BDI" data-page="html-bdi">
+									BDI
+								</a>
+                            </li>
+							<li>
+                                <a href="#Canvas" tabindex="-1" title="Canvas" data-page="html-canvas">
+									Canvas
+								</a>
+                            </li>
+							<li>
+                                <a href="#Data" tabindex="-1" title="Data" data-page="html-data">
+									Data
+								</a>
+                            </li>
+							<li>
+                                <a href="#DataList" tabindex="-1" title="DataList" data-page="html-datalist">
+								DataList
+								</a>
+                            </li>
+							<li>
+                                <a href="#Embed" tabindex="-1" title="Embed" data-page="html-embed">
+								Embed
+								</a>
+                            </li>
+							<li>
+                                <a href="#FigCaption" tabindex="-1" title="FigCaption" data-page="html-figcaption">
+								FigCaption
+								</a>
+                            </li>
+							<li>
+                                <a href="#Figure" tabindex="-1" title="Figure" data-page="html-figure">
+								Figure
+								</a>
+                            </li>
+							<li>
+                                <a href="#Footer" tabindex="-1" title="Footer" data-page="html-footer">
+								Footer
+								</a>
+                            </li>
+							<li>
+                                <a href="#Header" tabindex="-1" title="Header" data-page="html-header">
+								Header
+								</a>
+                            </li>
+							<li>
+                                <a href="#Keygen" tabindex="-1" title="Keygen" data-page="html-keygen">
+								Keygen
+								</a>
+                            </li>
+							<li>
+                                <a href="#Main" tabindex="-1" title="Main" data-page="html-main">
+								Main
+								</a>
+                            </li>
+							<li>
+                                <a href="#Mark" tabindex="-1" title="Mark" data-page="html-mark">
+								Mark
+								</a>
+                            </li>
+							<li>
+                                <a href="#Meter" tabindex="-1" title="Meter" data-page="html-meter">
+								Meter</a>
+                            </li>
+							<li>
+                                <a href="#Nav" tabindex="-1" title="Nav" data-page="html-nav">
+								Nav</a>
+                            </li>
+							<li>
+                                <a href="#Output" tabindex="-1" title="Output" data-page="html-output">
+								Output</a>
+                            </li>
+							<li>
+                                <a href="#Progress" tabindex="-1" title="Progress" data-page="html-progress">
+								Progress</a>
+                            </li>
+                            <li>
+                                <a href="#Ruby" tabindex="-1" title="Ruby" data-page="html-ruby">
+								Ruby</a>
+                            <ul>
+								<li>
+									<a href="#rb" tabindex="-1" title="RB" data-page="html-ruby">
+									RB</a>
+								</li>
+								<li>
+									<a href="#rp" tabindex="-1" title="rp" data-page="html-ruby">
+									RP</a>
+								</li>
+								<li>
+									<a href="#rt" tabindex="-1" title="rt" data-page="html-ruby">
+									RT</a>
+								</li>
+								<li>
+									<a href="#rtc" tabindex="-1" title="rtc" data-page="html-ruby">
+									RTC</a>
+								</li>
+							</ul>
+							</li>
+							<li>
+                                <a href="#Section" tabindex="-1" title="Section" data-page="html-section">
+								Section</a>
+                            </li>
+							<li>
+                                <a href="#Source" tabindex="-1" title="Source" data-page="html-source">
+								Source</a>
+                            </li>
+							<li>
+                                <a href="#Template" tabindex="-1" title="Template" data-page="html-template">
+								Template</a>
+                            </li>
+							<li>
+                                <a href="#Time" tabindex="-1" title="Time" data-page="html-time">
+								Time</a>
+                            </li>
+							<li>
+                                <a href="#Track" tabindex="-1" title="Track" data-page="html-track">
+								Track</a>
+                            </li>
+							<li>
+                                <a href="#Video" tabindex="-1" title="Video" data-page="html-video">
+								Video</a>
+                            </li>
+							<li>
+                                <a href="#wbr" tabindex="-1" title="WBR" data-page="html-wbr">
+								WBR</a>
+                            </li>
+						</ul>
+					</li>
+
+                    <li class="dawgdrops-item">
+                        <a href="http://www.washington.edu/brand/section/help/"
+                        id="486" title="Help">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+<main>
+<article id="html-history"><h1>History</h1></article>
+<article id="html-html51"><h1>HTML 5.1</h1></article>
+
+<article id="html-article"><h1>Article</h1>
+<pre>
+<code>
+<article itemscope itemtype="http://schema.org/BlogPosting">
+ <header>
+  <h1 itemprop="headline">The Very First Rule of Life</h1>
+  <p><time itemprop="datePublished" datetime="2009-10-09">3 days ago</time></p>
+  <link itemprop="url" href="?comments=0">
+ </header>
+ <p>If there's a microphone anywhere near you, assume it's hot and
+ sending whatever you're saying to the world. Seriously.</p>
+ <p>...</p>
+ <footer>
+  <a itemprop="discussionUrl" href="?comments=1">Show comments...</a>
+ </footer>
+</code>
+</article>
+</pre>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-article-element">W3C.org</A>
+</article>
+
+<article id="html-aside"><h1>Aside </h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-aside-element">W3C.org</A>
+</article>
+
+<article id="html-audio"><h1>Audio</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-audio-element">W3C.org</A>
+</article>
+
+<article id="html-bdi"><h1>BDI</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/text-level-semantics.html#the-bdi-element">W3C.org</A>
+</article>
+
+<article id="html-canvas"><h1>Canvas</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/scripting-1.html#the-canvas-element">W3C.org</A>
+</article>
+
+<article id="html-data"><h1>Data</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/text-level-semantics.html#the-data-element">W3C.org</A>
+</article>
+
+<article id="html-datalist"><h1>DataList</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#the-datalist-element">W3C.org</A>
+</article>
+
+<article id="html-embed"><h1>Embed</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-embed-element">W3C.org</A>
+</article>
+
+<article id="html-figcaption"><h1>FigCaption</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/grouping-content.html#the-figcaption-element">W3C.org</A>
+</article>
+
+<article id="html-figure"><h1>Figure</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/grouping-content.html#the-figure-element">W3C.org</A>
+</article>
+
+<article id="html-footer"><h1>Footer</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-footer-element">W3C.org</A>
+</article>
+
+<article id="html-header"><h1>Header</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-header-element">W3C.org</A>
+</article>
+
+<article id="html-keygen"><h1>Keygen</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#the-keygen-element">W3C.org</A>
+</article>
+
+<article id="html-main"><h1>Main</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/grouping-content.html#the-main-element">W3C.org</A>
+</article>
+
+<article id="html-mark"><h1>Mark</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/text-level-semantics.html#the-mark-element">W3C.org</A>
+</article>
+
+<article id="html-meter"><h1>Meter</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#the-meter-element">W3C.org</A>
+</article>
+
+<article id="html-nav"><h1>Nav</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-nav-element">W3C.org</A>
+</article>
+
+<article id="html-output"><h1>Output</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#the-output-element">W3C.org</A>
+</article>
+
+<article id="html-progress"><h1>Progress</h1>
+<a  class="uw-btn" href="<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/rendering.html#the-progress-element">W3C.org</A>-0
+</article>
+
+<article id="html-ruby"><h1>Ruby</h1>
+<h2>Not the rails kind.</h2>
+<p>
+The tag is used for specifying Ruby annotations, which is commonly used in East Asian typography. 
+</p>
+<p>
+Ruby (also spelt rubi) characters are small, annotative glosses that can be placed above or to the right of a character when writing logographic languages such as Chinese or Japanese to show the pronunciation. Ruby annotations, are usually used as a pronunciation guide for relatively obscure characters.
+</p>
+
+<ul>
+	<li>
+		<code>&lt;ruby&gt;</code>
+		Specifies a ruby annotation (used in East Asian typography)
+		<p>
+			<ruby><rb>旧</rb><rb>金</rb><rb>山</rb><rt>jiù</rt><rt>jīn</rt><rt>shān</rt></ruby>
+		</p>
+
+	</li>
+	<li>
+		<code>&lt;rb&gt;</code>
+		Marks the base text component of a ruby annotation.
+	 </li>
+	<li>
+		<code>&lt;rt&gt;</code>
+		Specifies the ruby text component of a ruby annotation.
+	 </li>
+	<li>
+		<code>&lt;rtc&gt;</code>
+		Marks a ruby text container for ruby text components in a ruby annotation.
+	 </li>
+	<li>
+		<code>&lt;rp&gt;</code>
+		Used for the benefit of browsers that don't support ruby annotations
+	</li>
+</ul>
+
+<a  class="uw-btn" href="https://www.w3.org/TR/html5/text-level-semantics.html#the-ruby-element">W3C.org</A>
+</article>
+
+<article id="html-section"><h1>Section</h1>
+<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/sections.html#the-section-element">W3C.org</A>
+</article>
+
+<article id="html-source"><h1>Source</h1>
+<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-source-element">W3C.org</A>
+</article>
+
+<article id="html-template"><h1>Template</h1>
+<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/scripting-1.html#the-template-element">W3C.org</A>
+</article>
+
+<article id="html-time"><h1>Time</h1>
+<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/text-level-semantics.html#the-time-element">W3C.org</A>
+</article>
+
+<article id="html-track"><h1>Track</h1>
+<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-track-element">W3C.org</A>
+</article>
+
+<article id="html-video"><h1>Video</h1>
+<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-video-element">W3C.org</A>
+</article>
+
+<article id="html-wbr"><h1>WBR</h1>
+<a  class="uw-btn" href="https://www.w3.org/TR/2014/REC-html5-20141028/text-level-semantics.html#the-wbr-element">W3C.org</A>
+</article>
+
+
+</main>
+</div>
+</div>
+</body>
+</html>
